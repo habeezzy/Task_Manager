@@ -2,9 +2,9 @@
 @import "reset";
 
 $white: #fff;
-$darkblue: #3A4793;
-$lightblue: #25B3EC;
-$lightpurple: #9787EE;
+$darkBlue: #3A4793;
+$lightBlue: #25B3EC;
+$lightPurple: #9787EE;
 $yellow: #FFBF3E;
 
 
@@ -28,16 +28,52 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  .welcome-box {
+    background: rgba(0, 0, 0 ,0.6);
+    padding: 40px 15px;
+    h1 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 28px;
+      font-weight: 100;
+      text-transform: uppercase;
+    }
+  }
 }
 
-.welcome-box {
-  background: rgba(0, 0, 0 ,0.6);
-  padding: 40px 15px;
 
-  h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 28px;
-    font-weight: 100;
-    text-transform: uppercase;
+#all-tasks {
+  background: url('https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg?auto=compress&cs=tinysrgb&h=750&w=1260') center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  .header{
+    background: rgba(0, 0 ,0, 0.4);
+    padding: 50px 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn {
+  width: 100%;
+  padding: 10px 20px;
+  text-align: center;
+  margin: 15px 0;
+  text-decoration: none;
+  &.lightBlue{
+    font-size: 25px;
+    background: $lightBlue;
   }
 }
