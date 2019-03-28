@@ -1,5 +1,6 @@
 @import url( 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
 @import "reset";
+@import url('https://fonts.googleapis.com/css?family=Megrim');
 
 $white: #fff;
 $darkBlue: #3A4793;
@@ -41,7 +42,6 @@ html, body {
   }
 }
 
-
 #all-tasks {
   background: url('https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg?auto=compress&cs=tinysrgb&h=750&w=1260') center center;
   background-repeat: no-repeat;
@@ -51,8 +51,27 @@ html, body {
   .header{
     background: rgba(58,71,147, 0.6);
     padding: 50px 15px;
+    text-align: right;
     .logo{
+     font-family: 'Megrim', cursive;
+     font-size: 36px;
+     float: left;
+    }
 
+    .tasks-total {
+      position: relative;
+      top: -20px;
+      .task{
+        display: inline-block;
+        .number {
+         color: $lightPurple;
+         font-weight: 100;
+         font-size: 60px;
+         margin: 0 10px 0 0;
+         position: relative;
+         top: 5px;
+        }
+      }
     }
   }
 }
